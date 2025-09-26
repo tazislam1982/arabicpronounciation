@@ -76,6 +76,10 @@ export default function PronouncePopup({
   const recognizerRef = useRef<sdk.SpeechRecognizer | null>(null);
   const autoTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  const toErrorMsg = (e: unknown) =>
+  typeof e === "string" ? e : (e as any)?.message || "Unexpected error";
+
+
   // guard flags
   const scoringRef = useRef(false); // re-entry guard for stopAndScore
   const introStartedRef = useRef(false);
@@ -207,9 +211,10 @@ export default function PronouncePopup({
     };
 
     rec.startContinuousRecognitionAsync(
-      () => {},
-      (err) => { setError(err?.message || "Failed to start recognition."); cleanupRecognizer(); }
+    () => {},
+    (err) => { setError(toErrorMsg(err)); cleanupRecognizer(); }
     );
+
 
     recognizerRef.current = rec;
   }
