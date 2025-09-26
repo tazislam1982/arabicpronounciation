@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 250 250 251;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-[#f6f7fb] text-slate-800;
+}
+
+/* Simple utility for the yellow ribbon */
+.ribbon {
+  position: relative;
+  background: linear-gradient(90deg, #314b86 0%, #314b86 60%, #314b86 100%);
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  color: #ffffff;
+}
+
+.menu-shadow { box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+.card {
+  @apply bg-white rounded-xl shadow-card;
+}
+
+.progress-track {
+  @apply h-2 rounded-full bg-slate-200 overflow-hidden;
+}
+.progress-bar {
+  @apply h-2 rounded-full;
+}
+
+.bg-base-theme
+{
+  background-color: #314b86;
+}
+
+.bg-custom-orange
+{
+  background-color: #d15e3f;
+}
+
+
+
+.hover\:h-bg-orange:hover {
+    --tw-bg-opacity: 1;
+    background-color: #d15e3f;
+}
+
+.text-base-color
+{
+  color: #d15e3f
+}
+
+.btn-orange
+{
+  background-color: #d15e3f;
+  color: #ffffff;
+}
+
+.hover\:btn-orange:hover 
+{
+  background-color: #314b86;
+  color: #ffffff;
+ 
+}
+
+.btn-base
+{
+  background-color: #314b86;
+  color: #ffffff;
+}
+
+.hover\:btn-base:hover 
+{
+  background-color: #4165b8;
+  color: #ffffff;
+ 
+}
+
+@font-face {
+  font-family:Uthmani;
+  src:url(/fonts/UthmanicHafs1-Ver09-0636f345f5ed5017fb1cee45f55135ce.woff);
+  font-weight:400;
+  font-style:normal
+}
+
+.ar-font {
+  font-family: Uthmani !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2.5rem;
+}
