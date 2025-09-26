@@ -8,7 +8,7 @@
           <div className="py-10 flex  items-center justify-center ">
            
             <div className="text-xs opacity-80">
-              © {new Date().getFullYear()} Arabic Pronounciation — All rights reserved.
+              © {new Date().getFullYear()} Arabic Pronunciation — All rights reserved.
             </div>
           </div>
  

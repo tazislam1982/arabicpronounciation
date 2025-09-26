@@ -8,7 +8,7 @@ import Link from "next/link";
             <Link href="/" className="flex items-center gap-2 font-semibold">
                 <div className="w-8 h-8 rounded-md bg-white grid text-base-color place-items-center">أ</div>
                 
-                <span>Arabic Pronounciation</span>
+                <span>Arabic Pronunciation</span>
             </Link>
 
             <nav className="ml-auto hidden md:flex items-center gap-6 text-sm text-slate-600">

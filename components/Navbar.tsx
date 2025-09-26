@@ -24,7 +24,7 @@ export default function Navbar() {
           <div className="w-9 h-9 rounded-lg bg-brand-yellow flex items-center justify-center">
             <span className="font-bold">أ</span>
           </div>
-          <span className="font-semibold">My Pronounciation</span>
+          <span className="font-semibold">My Arabic Pronunciation</span>
         </Link>
 
        

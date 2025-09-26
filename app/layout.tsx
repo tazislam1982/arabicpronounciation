@@ -4,7 +4,7 @@ import  "./globals.css"
 
 
 export const metadata: Metadata = {
-  title: "Arabic Pronounciation App",
+  title: "Arabic Pronunciation App",
   description: "",
 };
 

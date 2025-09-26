@@ -9,7 +9,7 @@ export default function CoursePage() {
         <div className="mx-auto max-w-6xl px-4 py-10">
           <h1 className="text-3xl font-semibold">Welcome to your plan.</h1>
           <div className="mt-6 max-w-md">
-            <div className="text-sm text-white">Arabic Pronounciation</div>
+            <div className="text-sm text-white">Arabic Pronunciation</div>
             <div className="mt-2">
               <Progress value={65} color="bg-amber-500" />
             </div>
