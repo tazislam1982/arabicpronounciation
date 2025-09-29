@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import CategoryCard from "@/components/CategoryCard";
-import type { CategoryWithProgress } from "@/lib/dal";
+import type { CategoryWithProgress } from "@/types/db";
 
 export default function CourseListClient({ categories }: { categories: CategoryWithProgress[] }) {
   // Gate rendering till client is mounted to avoid SSR/CSR mismatch
