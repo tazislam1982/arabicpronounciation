@@ -26,7 +26,7 @@ export default function LoginClient() {
       setErr(data?.message || "Login failed");
       return;
     }
-    window.location.href = "/courses";
+    window.location.href = "/course";
   };
 
   return (
