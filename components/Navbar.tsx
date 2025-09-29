@@ -51,12 +51,12 @@ export default function Navbar() {
               className="absolute right-0 mt-2 w-56 rounded-xl bg-white ring-1 ring-black/5 menu-shadow overflow-hidden z-50"
             >
      
-              <MenuItem href="#">Edit Profile</MenuItem>
+              <MenuItem href="/profile">Edit Profile</MenuItem>
  
               <MenuItem href="#">My Achievements</MenuItem>
-              <MenuItem href="#">Help &amp; Support</MenuItem>
+              <MenuItem href="/help-support">Help &amp; Support</MenuItem>
               <div className="border-t" />
-              <MenuItem href="/" emphasis>Sign Out</MenuItem>
+              <MenuItem href="/logout" emphasis>Sign Out</MenuItem>
             </div>
           )}
         </div>

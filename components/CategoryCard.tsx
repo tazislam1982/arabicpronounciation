@@ -2,35 +2,35 @@ import Link from "next/link";
 import { Progress } from "./Progress";
 import { IconClock } from "./ui/icons";
 
-export default function LessonCard({
-  title,
-  subtitle,
+export default function CategoryCard({
+  name,
+  number_of_items,
+  description,
   minutes,
   progress,
   correct,
   incorrect,
-  lessonslug,
   slug,
   cta = "Continue",
   disabled = false,
 }: {
-  title: string;
-  subtitle: string;
+  name: string;
+  number_of_items:number,
+  description: string;
   minutes: number;
   progress: number;
   correct?: number;
   incorrect?: number;
-  lessonslug?:string,
   slug?:string,
   cta?: string;
   disabled?: boolean;
 }) {
   return (
     <div className="card p-5 flex flex-col gap-3">
-      <div className="text-sm text-slate-500">{subtitle}</div>
+      <div className="text-sm text-slate-500">Learn {name}</div>
       <div className="flex items-center justify-between gap-4">
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <Link href={"/courses/lesson/"+lessonslug+"?slug="+slug }
+        <h3 className="text-lg font-semibold">{number_of_items} Words</h3>
+        <Link href={"/courses/lesson/"+slug }
            
           className={`px-4 py-2 rounded-md text-white text-sm font-medium ${disabled ? "bg-slate-300" : "bg-sky-500 hover:bg-sky-600"}`}
         >
@@ -49,7 +49,7 @@ export default function LessonCard({
 
       <div className="mt-1 text-xs text-slate-500 flex items-center gap-2">
         <span className="inline-flex items-center gap-1">
-          <IconClock />          {minutes} minutes
+          <IconClock />    {minutes} minutes
         </span>
       </div>
     </div>
